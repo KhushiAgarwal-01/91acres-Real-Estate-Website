@@ -109,7 +109,7 @@ const DateDropdown = () => {
 
   return (
     <Menu as='div' className='dropdown relative'>
-      <Menu.Button onClick={() => {setIsOpen(!isOpen)}} className="dropdown-btn w-full text-left  hover:bg-violet-400 hover:rounded-lg hover:text-white ">
+      <Menu.Button onClick={() => {setIsOpen(!isOpen)}} className="dropdown-btn w-full text-left  hover:bg-gray-600 hover:rounded-lg hover:text-white ">
         <RiCalendarLine className=' dropdown-icon-primary hover:text-white' />
         <div >
           <div className='text-[15px] font-medium leading-tight'>{startDate}</div>
@@ -125,7 +125,7 @@ const DateDropdown = () => {
       <Menu.Items className='dropdown-menu h-[400px] overflow-scroll overflow-x-hidden'>
         {dates.map((date, index) => {
           return(
-            <Menu.Item onClick={() => {setStartDate(date.value)}} className="cursor-pointer hover:text-violet-700 transition" as='li' key={index}>
+            <Menu.Item onClick={() => {setStartDate(date.value)}} className="cursor-pointer hover:text-gray-400 transition" as='li' key={index}>
               {date.value }
             </Menu.Item>
           )
