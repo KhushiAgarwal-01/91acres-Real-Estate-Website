@@ -11,7 +11,7 @@ import Home from "./pages/Home";
 
 function App() {
   return (
-    <div className="max-w-[1440px] mx-auto bg-green-100 ">
+    <div className=" mx-auto bg-green-100 ">
        <Header/>
        <Routes>
         <Route path="/" element={<Home/>} />
